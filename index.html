@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer async></script>
+    <title>Meteo</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">
+            La meteo
+        </h1>
+        <div>
+            <input type="text" id="name" placeholder="Rechercher">
+            <button id="send">GO</button>
+        </div>
+        
+    </header>
+
+    <div class="card-meteo-contener">
+        <div class="card-meteo" id="card-1">
+            <div class="card-top" id="top-card-1">
+              <img src="img/vide.svg" alt="#" id="card-img-1">
+              <div class="info-card-top">
+                <p class="etat" id="etat-card-1"></p>
+                <p class="temperature" id="temperature-card-1"></p>
+                <p class="ville" id="ville-card-1"></p>
+              </div>
+            </div>
+            <div class="card-bottom" id="bottom-card-1">
+              <p>Humidité<span class="humidite" id="humidite-card-1"></span></p>
+              <p>Vent<span class="vent" id="vent-card-1"></span></p>
+              <p>Precipitation<span class="precipitation" id="precipitation-card-1"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <p id="test"></p>
+    
+</body>
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #F8F8F8;
+}
+
+/* --------- HEADER ---------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#send{
+    width: 50px;
+    height: 50px;
+    border: #003566 2px solid;
+    border-radius: 50px;
+    text-align: center
+}
+
+#name{
+    width: 300px;
+    height: 50px;
+    border: #003566 2px solid;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+
+/* --------------------------- */
+
+.card-meteo-contener{
+    padding: 50px;
+}
+
+.etat, .ville{
+    font-size: 20px;
+}
+
+.temperature{
+    font-size: 50px;
+}
+
+.card-meteo{
+    width: 280px;
+    height: 350px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-top{
+    background: #FFEBB2;
+    width: 100%;
+    height: 55%;
+    color: #003566;
+    padding: 20px 25px;
+}
+
+.card-top img{
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.card-top .info-card-top{
+    position: relative;
+    top: -65px;
+    left: -70px;
+}
+
+.card-top p{
+    text-align: right;
+    width: 300px;
+}
+
+.card-bottom{
+    background: #FFF;
+    width: 100%;
+    height: 45%;
+    color: #AEAEAE;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+
+.card-bottom p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-bottom span{
+    display: block;
+    color: #868686;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 500px){
+
+    header{
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    header div{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
